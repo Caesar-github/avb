@@ -209,7 +209,10 @@ int main(int argc, char *argv[]){
       bootcontrol bootable
     */
     if(argc < 2){
-        printf("please input activeboot/unableboot/bootable\n");
+        printf("please input bootactive/bootunable/bootable <0 | 1>\n"
+               "Example:\n"
+               "	%s activeboot 0 #set active slot to _a\n",
+               argv[0]);
         return -1;
     }
     
